@@ -1,20 +1,20 @@
 name: Release
 
-# on:
-#   workflow_call:
-#     inputs:
-#       is_prerelease:
-#         description: Pre-release
-#         type: boolean
-#         required: true
-#       release_tag:
-#         description: Release tag
-#         type: string
-#         required: true
-#       release_body:
-#         description: Release description
-#         type: string
-#         required: true
+on:
+  workflow_call:
+    inputs:
+      is_prerelease:
+        description: Pre-release
+        type: boolean
+        required: true
+      release_tag:
+        description: Release tag
+        type: string
+        required: true
+      release_body:
+        description: Release description
+        type: string
+        required: true
 
 jobs:
   release:
