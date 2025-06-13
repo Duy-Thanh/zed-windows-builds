@@ -61,10 +61,10 @@ jobs:
           ref: ${{ inputs.ref }}
           path: zed
 
-      - name: Install rust nightly
+      - name: Install rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: nightly
+          toolchain: stable
           override: true
           target: wasm32-wasip1
 
